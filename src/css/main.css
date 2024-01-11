@@ -1,0 +1,97 @@
+.header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding: 20px 30px;
+  box-shadow: 0px 0px 10px rgb(201, 201, 201);
+  z-index: 999;
+  background-color: white;
+}
+
+.logo {
+  width: 150px;
+}
+
+.container {
+  height: 5000px;
+  padding-top: 90px;
+}
+
+.section {
+  margin: 0px 30px;
+}
+
+.title#hot-menu-title {
+  margin: 20px 0px;
+}
+
+.card-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  box-sizing: border-box;
+  background-color: beige;
+}
+
+@media screen and (max-width: 475px) {
+  .header {
+    padding: 15px 0px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    position: relative;
+    width: 120px;
+  }
+
+  .container {
+    padding-top: 60px;
+  }
+
+  .title#hot-menu-title {
+    font-size: 24px;
+  }
+
+  .section {
+    margin: 0px 15px;
+  }
+
+  .card {
+    flex-direction: column;
+    width: calc(50% - 10px);
+    margin: 10px 0px;
+  }
+}
+
+@media screen and (max-width: 326px) {
+  .header {
+    background-color: aqua;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0px;
+  }
+
+  .card > img {
+    width: 100%;
+    /*background: linear-gradient(
+        rgba(255, 255, 255, 0) 10%,
+        rgba(255, 255, 255, 0.5) 25%,
+        rgba(255, 255, 255, 0.7) 40%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 1) 75%,
+        rgba(255, 255, 255, 1) 100%
+      ),
+      url('../../resource/images/spicy-galbi.jpg'); */
+  }
+
+  .card > h1 {
+    text-wrap: nowrap;
+  }
+}
